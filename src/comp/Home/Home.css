@@ -28,3 +28,10 @@
     margin: auto;
     font-size: 30px;
 }
+
+/* Media Query for movies heading */
+@media (max-width: 768px) {
+    .movies-heading{
+        font-size: 14px;
+    }
+}
