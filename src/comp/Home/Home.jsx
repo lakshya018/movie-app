@@ -34,21 +34,42 @@ const Home = () => {
         <div className="container moviesList">
             {
                 (movies.length === 0 && searchString === null) ?
-                    recentMovies.map((movie) => {
-                        return <MovieCard key={movie.id} movie={movie} />
-                    })
+                    <div>
+                        <h2 className='movies-heading'>Most Recent Movies</h2>
+                        <div className="recent-movies">
+                            {
+                                recentMovies.map((movie) => {
+                                    return <MovieCard key={movie.id} movie={movie} />
+                                })
+                            }
+                        </div>
+                    </div> 
                 :
-                    (movies.length === 0 && searchString.length === 0) ?
-                        recentMovies.map((movie) => {
-                            return <MovieCard key={movie.id} movie={movie} />
-                        })
+                (movies.length === 0 && searchString.length === 0) ?
+                     <div>
+                        <h2 className='recent-movies-title'>Most Recent Movies</h2>
+                        <div className="recent-movies">
+                            {
+                                recentMovies.map((movie) => {
+                                    return <MovieCard key={movie.id} movie={movie} />
+                                })
+                            }
+                        </div>
+                    </div>
                 :
-                    (movies.length === 0 && searchString.length > 0) ?
+                (movies.length === 0 && searchString.length > 0) ?
                         <div className='noResult'><h3>No Data Found</h3></div>
                 :
-                    movies.map((movie) => {
-                        return <MovieCard key={movie.id} movie={movie} />
-                    })
+                    <div>
+                        <h2 className='movies-heading'>Search Results For: {searchString}</h2>
+                        <div className="searched-movies">
+                            {
+                                movies.map((movie) => {
+                                    return <MovieCard key={movie.id} movie={movie} />
+                                })
+                            }
+                        </div>
+                    </div>
             }
         </div>
 
