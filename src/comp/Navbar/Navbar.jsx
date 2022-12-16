@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import logo from '../../insynk logo.png';
 import MovieContext from '../context/MovieContext';
 import './Navbar.css';
-import Home from '../Home/Home';
 
 const Navbar = () => {
     const context = useContext(MovieContext);
@@ -27,14 +26,6 @@ const Navbar = () => {
             }
             getMovies(searchString);
         }
-    }
-
-    const handleSearch = () => {
-        if(searchString.length===0){
-            alert("Please enter a movie name!");
-            return;
-        }
-        getMovies(searchString);
     }
 
     return (
