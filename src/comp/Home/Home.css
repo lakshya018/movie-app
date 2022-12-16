@@ -1,0 +1,14 @@
+.moviesList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    justify-content: center;
+    
+}
+
+.noResult{
+    margin: auto;
+    font-size: 30px;
+}
