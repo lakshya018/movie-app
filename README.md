@@ -4,9 +4,11 @@ This project based on fetching movies details from The Movie Database (TMDB) and
 
 I hosted this website on netlify and its URL is https://movieapp018.netlify.app/
 
+![image](https://user-images.githubusercontent.com/69206138/208049540-8a1a223b-b9ea-446c-b7c8-22edfce366f1.png)
 
-![image](https://user-images.githubusercontent.com/69206138/208041904-25a9fb66-6893-4074-b42a-c0a1b552010a.png)
+![image](https://user-images.githubusercontent.com/69206138/208049632-849f8e11-c5e0-4748-976e-b3838682786a.png)
 
-![image](https://user-images.githubusercontent.com/69206138/208041967-033097f6-962a-419a-8bc3-87fa818c04e6.png)
+![image](https://user-images.githubusercontent.com/69206138/208049741-459015a8-f178-485b-bd90-cce92fd92580.png)
+
 
 Thank You!
