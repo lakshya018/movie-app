@@ -1,0 +1,41 @@
+.moviesList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    justify-content: center;
+    
+}
+.movies-heading{
+    text-align: left;
+}
+.recent-movies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.searched-movies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.noResult{
+    margin: auto;
+    font-size: 30px;
+}
+.noteRed{
+    color: red;
+    text-align: justify;
+}
+/* Media Query for movies heading */
+@media (max-width: 768px) {
+    .movies-heading{
+        font-size: 14px;
+    }
+    .noteRed{
+        font-size: 14px;
+    }
+}
